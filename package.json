@@ -1,0 +1,23 @@
+{
+  "name": "paste-forcibly",
+  "description": "This tool allows to paste even elements that are not allowed to past.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.144",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "cpx": "^1.5.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.2"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc && cpx ./src/{manifest.json,icon*.png} dist/ && zip -j paste-forcibly.zip dist/*",
+    "eslint": "eslint --ignore-path .gitignore --fix .",
+    "prettier": "prettier --ignore-path .gitignore --write .",
+    "format": "yarn eslint && yarn prettier",
+    "test": "eslint --ignore-path .gitignore . && prettier --ignore-path .gitignore --check ."
+  }
+}
