@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
-    "@types/chrome": "0.0.156",
+    "@types/chrome": "0.0.157",
     "@typescript-eslint/eslint-plugin": "4.31.0",
     "@typescript-eslint/parser": "4.31.0",
     "cpx": "1.5.0",
